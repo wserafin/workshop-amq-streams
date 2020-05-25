@@ -42,10 +42,10 @@ Now, because the `timer-producer` application will write on the already existing
 oc apply -f https://raw.githubusercontent.com/RedHatWorkshops/workshop-amq-streams/master/configurations/topics/lines-10-target.yaml
 ----
 
-Now let's deploy MirrorMaker.
+Now let's deploy MirrorMaker 2.
 
 ----
-oc apply -f https://raw.githubusercontent.com/RedHatWorkshops/workshop-amq-streams/master/configurations/clusters/mirror-maker-single-namespace.yaml
+oc apply -f https://raw.githubusercontent.com/redhat-canada/workshop-amq-streams/master/configurations/clusters/mirror-maker-single-namespace.yaml
 ----
 
 The notions of producer and consumer are from MirrorMaker's perspective.
@@ -54,7 +54,7 @@ Messages will be read from the producer (in MirrorMaker config) and published to
 Now let's deploy the `log-consumer` application reading from the target cluster.
 
 ----
-oc apply -f https://raw.githubusercontent.com/RedHatWorkshops/workshop-amq-streams/master/configurations/applications/log-consumer-target.yaml
+oc apply -f https://raw.githubusercontent.com/redhat-canada/workshop-amq-streams/master/configurations/applications/log-consumer-target.yaml
 ----
 
 And finally the `timer-producer` application writing to the source cluster.
