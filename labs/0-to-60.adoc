@@ -19,6 +19,16 @@ oc new-project [project-name]
 
 you will be running all the labs from that project
 
+=== Inspect the AMQ Streams Operator
+
+in your project, you should see that the AMQStreams operator was made available to you by a cluster administrator:
+
+image::images/openshiftoperators.png[]
+
+if you click on the Operator, you should see that it provides several APIs to interact with  Apache Kafka:
+
+image::images/operatordetails.png[]
+
 
 === Creating an Apache Kafka cluster
 
