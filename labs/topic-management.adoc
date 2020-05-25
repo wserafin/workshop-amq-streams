@@ -110,4 +110,9 @@ We can now exit the container.
 exit
 ----
 
+You should also see your topic in the OpenShift Console:
+
+image::images/topic.png[]
+
+
 Now that the topic has been created, we can start running some applications.
