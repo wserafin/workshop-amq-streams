@@ -11,7 +11,7 @@ Note the `CAMEL_COMPONENT_KAFKA_CONFIGURATION_BROKERS` environment variable that
 The descriptor for the application is below.
 
 ----
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: timer-producer
@@ -19,6 +19,9 @@ metadata:
     app: kafka-workshop
 spec:
   replicas: 1
+  selector:
+   matchLabels:   
+      name: timer-producer
   template:
     metadata:
       labels:
@@ -30,7 +33,7 @@ spec:
           image: docker.io/mbogoevici/timer-producer:latest
           env:
             - name: CAMEL_COMPONENT_KAFKA_CONFIGURATION_BROKERS
-              value: "production-ready-kafka-bootstrap.amq-streams.svc:9092"
+              value: "production-ready-kafka-bootstrap:9092"
 ----
 
 Next, we deploy the application.
@@ -91,7 +94,7 @@ log-consumer-5d4586bdcd-gm9xp                       1/1       Running   0       
 Now let's tail the logs from the consumer (use the pod id retrieved in the previous step).
 
 ----
-oc logs -f pod/log-consumer-<pod-id>  -c log-consumer --tail=-1
+oc logs -f log-consumer-<pod-id>  -c log-consumer --tail=-1
 ----
 
 We expect the output to look like as follows:
