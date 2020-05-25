@@ -1,4 +1,4 @@
-apiVersion: extensions/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: timer-producer
@@ -6,6 +6,9 @@ metadata:
     app: kafka-workshop
 spec:
   replicas: 1
+  selector:
+   matchLabels:   
+      name: timer-producer
   template:
     metadata:
       labels:
