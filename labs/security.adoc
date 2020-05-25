@@ -230,8 +230,15 @@ spec:
 Let's apply this new configuration:
 
 ----
-oc apply -f https://raw.githubusercontent.com/RedHatWorkshops/workshop-amq-streams/master/configurations/applications/log-consumer-secured.yaml
+oc apply -f https://raw.githubusercontent.com/redhat-canada/workshop-amq-streams/master/configurations/applications/log-consumer-secured.yaml
 ----
 
 Inspect the log of `log-consumer` again.
 You should see the messages being exchanged.
+
+==== OAuth security
+
+it is also possible to delegate and externalize security using OAuth.
+Please refer to:
+
+https://strimzi.io/blog/2019/10/25/kafka-authentication-using-oauth-2.0/
