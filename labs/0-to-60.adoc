@@ -11,7 +11,7 @@ image::images/openshiftlogin.png[]
 
 Create your first OpenShift project:
 
-image::images/openshiftlogin.png[]
+image::images/openshiftproject.png[]
 
 or from the command line:
 
