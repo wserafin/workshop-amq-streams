@@ -1,3 +1,18 @@
+=== Login on the OpenShift Console with your provided user name.
+For this workshop, the console is available here:
+https://console-openshift-console.apps.cluster-mtl-e9a6.mtl-e9a6.example.opentlc.com
+
+Download OpenShift client tool (oc) from here: https://console-openshift-console.apps.cluster-mtl-e9a6.mtl-e9a6.example.opentlc.com/command-line-tools
+
+using the dowloaded oc command, login to OpenShift using the command line tool.
+The cluster is configured using OAuth authentication, you need to obtain your token from the console:
+
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+
+
+
+
+
 === Creating an Apache Kafka cluster
 
 It is time to start an Apache Kafka cluster.
