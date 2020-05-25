@@ -15,9 +15,7 @@ This is the lab section of the AMQ Streams workshop.
 
 . link:./security.adoc[Security]
 
-. link:./watching-multiple-namespaces.adoc[Watching multiple namespaces]
-
-. link:./mirror-maker.adoc[Replicating Data with MirrorMaker]
+. link:./mirror-maker-single-namespace.adoc[Replicating Data with MirrorMaker]
 
 . link:./kafka-connect.adoc[Running KafkaConnect applications]
 
