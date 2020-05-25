@@ -7,7 +7,7 @@ Download OpenShift client tool (oc) from here: https://console-openshift-console
 using the dowloaded oc command, login to OpenShift using the command line tool.
 The cluster is configured using OAuth authentication, you need to obtain your token from the console:
 
-image::images/openshiftlogin.png
+image::images/openshiftlogin.png[]
 
 
 
