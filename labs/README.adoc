@@ -5,7 +5,7 @@ This is the lab section of the AMQ Streams workshop.
 
 # Outline
 
-. link:./0-to-60.adoc[AMQ Streams on OpenShift from 0 to 60]
+. link:./0-to-60.adoc[AMQ Streams on OpenShift]
 
 . link:./production-ready-topologies.adoc[Production-ready topologies: sizing and persistence]
 
@@ -20,4 +20,4 @@ This is the lab section of the AMQ Streams workshop.
 . link:./management-monitoring.adoc[Management and monitoring]
 
 . link:./kafka-connect.adoc[Running KafkaConnect and Debezium applications (extra lab)]
-You will have to change the certificate and connection url to match your installation
+=== You will have to change the certificate and connection url to match your installation
