@@ -42,7 +42,7 @@ roleRef:
 subjects:
 - kind: ServiceAccount
   name: prometheus-server
-  namespace: amq-streams
+  namespace: demo
 
 ---
 apiVersion: apps/v1

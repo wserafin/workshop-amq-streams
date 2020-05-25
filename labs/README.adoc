@@ -17,6 +17,7 @@ This is the lab section of the AMQ Streams workshop.
 
 . link:./mirror-maker-single-namespace.adoc[Replicating Data with MirrorMaker]
 
-. link:./kafka-connect.adoc[Running KafkaConnect applications]
-
 . link:./management-monitoring.adoc[Management and monitoring]
+
+. link:./kafka-connect.adoc[Running KafkaConnect and Debezium applications (extra lab)]
+You will have to change the certificate and connection url to match your installation

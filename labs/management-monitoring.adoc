@@ -40,50 +40,15 @@ Make sure your project is set to 'amq-streams'.
 oc expose svc prometheus
 ----
 
-=== Install Grafana
+=== Opening Grafana
 
-----
-oc apply -f https://raw.githubusercontent.com/redhat-canada/workshop-amq-streams/master/configurations/metrics/grafana.yaml
-----
+in your browser, go to the Grafana URL:
+for this workshop:
 
-Then we create a route for the Grafana service.
-Make sure your project is set to 'amq-streams'.
+http://grafana-demo.apps.cluster-mtl-e9a6.mtl-e9a6.example.opentlc.com/
 
-----
-oc expose svc grafana
-----
+User/Password:  admin/admin
 
-Now, let's configure the Grafana dashboard.
-Get the route:
+Go to the Strimzi Kafka dashboard
+Select your namespace and cluster to monitor your kafka deployment.
 
-----
-oc get routes
-----
-
-Login as `admin`/`admin` to the Grafana dashboard on your browser with the URL from above.
-You can also change the admin password if you'd like.
-
-=== Setting up Grafana to monitor Kafka
-
-Create the Prometheus datasource.
-Go to the `Gear' icon on the left and then pick *Datasources*.
-
-Choose Prometheus as data source type and then fill following values:
-
-     name: prometheus
-     url:  `http://<PROMETHEUS_ROUTE>`
-
-Save and Test.
-You should see a 'data source tested' message.
-
-Import Dashboard definitions.
-Go to the + on the top left and choose "import".
-Copy the JSON from this location `https://raw.githubusercontent.com/strimzi/strimzi-kafka-operator/0.11.1/metrics/examples/grafana/strimzi-kafka.json`
-Pick prometheus as the datasource and finish
-You should see the dashboard with data like in the screenshots.
-
-Similarly to create kafka-zookeeper dashboards, import the corresponding definition.
-Go to the + on the top left and choose "import".
-Copy the JSON from this location `https://raw.githubusercontent.com/strimzi/strimzi-kafka-operator/0.11.1/metrics/examples/grafana/strimzi-zookeeper.json`
-Pick prometheus as the datasource and finish.
-You should see the dashboard with data like in the screenshots.
