@@ -2,7 +2,6 @@
 
 This is the lab section of the AMQ Streams workshop.
 
-Before starting, let's get familiar with the link:./environment.adoc[lab environment].
 
 # Outline
 
@@ -13,8 +12,6 @@ Before starting, let's get familiar with the link:./environment.adoc[lab environ
 . link:./topic-management.adoc[Topic management]
 
 . link:./understanding-the-application-ecosystem.adoc[Understanding the Kafka application ecosystem]
-
-. link:./clients-within-outside-OCP.adoc[Clients: within OCP and outside OCP]
 
 . link:./security.adoc[Security]
 
