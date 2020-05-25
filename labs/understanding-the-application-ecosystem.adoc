@@ -71,7 +71,20 @@ spec:
             - name: CAMEL_COMPONENT_KAFKA_CONFIGURATION_BROKERS
               value: "production-ready-kafka-bootstrap:9092"
             - name: CAMEL_COMPONENT_KAFKA_CONFIGURATION_GROUP_ID
-              value: test-group
+              value: secure-group
+            - name: CAMEL_COMPONENT_KAFKA_CONFIGURATION_SASL_JAAS_CONFIG
+              value: org.apache.kafka.common.security.scram.ScramLoginModule required username='${KAFKA_USER}' password='${KAFKA_PASSWORD}';
+            - name: CAMEL_COMPONENT_KAFKA_CONFIGURATION_SASL_MECHANISM
+              value: SCRAM-SHA-512
+            - name: CAMEL_COMPONENT_KAFKA_CONFIGURATION_SECURITY_PROTOCOL
+              value: SASL_PLAINTEXT
+            - name: KAFKA_USER
+              value: secure-topic-reader
+            - name: KAFKA_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  key: password
+                  name: secure-topic-reader
 ----
 
 Now, let's deploy the message consumer.

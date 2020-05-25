@@ -1,4 +1,4 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: timer-producer
@@ -6,6 +6,9 @@ metadata:
     app: kafka-workshop
 spec:
   replicas: 1
+  selector:
+   matchLabels:   
+      name: timer-producer
   template:
     metadata:
       labels:
@@ -17,7 +20,7 @@ spec:
           image: docker.io/mbogoevici/timer-producer:latest
           env:
             - name: CAMEL_COMPONENT_KAFKA_CONFIGURATION_BROKERS
-              value: "production-ready-kafka-bootstrap.amq-streams.svc:9092"
+              value: "production-ready-kafka-bootstrap:9092"
             - name: CAMEL_COMPONENT_KAFKA_CONFIGURATION_SASL_JAAS_CONFIG
               value: org.apache.kafka.common.security.scram.ScramLoginModule required username='${KAFKA_USER}' password='${KAFKA_PASSWORD}';
             - name: CAMEL_COMPONENT_KAFKA_CONFIGURATION_SASL_MECHANISM
