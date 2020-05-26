@@ -19,5 +19,4 @@ This is the lab section of the AMQ Streams workshop.
 
 . link:./management-monitoring.adoc[Management and monitoring]
 
-. link:./kafka-connect.adoc[Running KafkaConnect and Debezium applications (extra lab)]
-=== You will have to change the certificate and connection url to match your installation
+. link:https://github.com/masauve/AMQStreams-workshop/blob/master/lab5.md[Running KafkaConnect and Debezium applications (extra lab)]
