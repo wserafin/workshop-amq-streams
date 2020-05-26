@@ -111,7 +111,7 @@ OpenJDK 64-Bit Server VM warning: If the number of processors is expected to inc
 >test2
 ----
 
-Now let's open another terminal into the cluster pod in a separate terminal (open another `ssh` terminal into the workstation):
+Now let's open another terminal into the cluster pod in a separate terminal (oc login --token...)
 
 ----
 $ oc rsh simple-cluster-kafka-0
