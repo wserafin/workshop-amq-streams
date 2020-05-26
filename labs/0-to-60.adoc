@@ -9,6 +9,8 @@ The cluster is configured using OAuth authentication, you need to obtain your to
 
 image::images/openshiftlogin.png[]
 
+oc login --token=gTZkG-OKZ9OWkoEAR25vbXgtZNcbWE-YLPadsaVKMz83M --server=https://api.cluster-mtl-e9a6.mtl-e9a6.example.opentlc.com:6443
+
 Create your first OpenShift project:
 
 image::images/openshiftproject.png[]
