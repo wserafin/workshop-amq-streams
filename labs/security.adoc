@@ -140,6 +140,8 @@ oc apply -f https://raw.githubusercontent.com/RedHatWorkshops/workshop-amq-strea
 ----
 
 Looking at the logs, we see a lot of errors - the clients cannot connect anymore.
+oc get pods | grep log-consumer
+oc logs -f log-consumer-<id> -c log-consumer --tail=1
 
 We need to reconfigure the running apps:
 ----
