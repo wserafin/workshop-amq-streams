@@ -15,6 +15,7 @@ In this case it is 'amq-streams'.
 Delete your target cluster from previous lab:
 
 oc delete kafka/production-ready-target
+
 oc delete KafkaMirrorMaker2/my-mm2-cluster
 
 === Instrumenting the Kafka cluster
