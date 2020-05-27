@@ -48,7 +48,7 @@ for this workshop:
 
 http://grafana-demo.apps.cluster-mtl-e9a6.mtl-e9a6.example.opentlc.com/
 
-User/Password:  admin/admin
+User/Password:  admin/admin123
 
 Go to the Strimzi Kafka dashboard
 Select your namespace and cluster to monitor your kafka deployment.
