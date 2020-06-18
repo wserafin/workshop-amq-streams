@@ -61,9 +61,8 @@ Topic:lines	PartitionCount:2	ReplicationFactor:2	Configs:segment.bytes=107374182
 
 Exit the container shell. Type:
 
--------
-exit
-------
+-> exit
+
 
 Now let's increase the number of partitions.
 First, we need to amend the resource.
