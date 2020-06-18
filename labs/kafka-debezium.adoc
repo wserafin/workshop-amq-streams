@@ -108,7 +108,7 @@ oc apply -f https://raw.githubusercontent.com/masauve/AMQStreams-workshop/master
 
 The connector should have created several Topics on your Kafka cluster. These topics represent the structure of your database:
 
-image::images/topics-kc.png
+image::images/topics-kc.png[]
 
 
 Open a Kafka customer on the inventory.customers topic:
@@ -119,7 +119,7 @@ oc run kafka-consumer -ti --image=registry.access.redhat.com/amq7/amq-streams-ka
 
 In the Openshift console, open a terminal inside the MySql Pod:
 
-image::images/lab5-connect-04.png
+image::images/lab5-connect-04.png[]
 
 * Project: votre projet
 * Workloads: Pods
@@ -149,4 +149,4 @@ insert into customers values (null,'Wojciech', 'Serafin', 'ws@me.com');
 
 The content of the comic should be automatically sent by Kafka-Connect on the Kafka topic (dbserver1.inventory.customers)
 
-image::images/lab5-connect-red.png
+image::images/lab5-connect-red.png[]
