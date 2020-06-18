@@ -143,7 +143,7 @@ use inventory;
 Insert data (for example):
 
 ```
-insert into customers values (null,'Martin', 'Sauve', 'me@me.com');
+insert into customers values (null,'Wojciech', 'Serafin', 'ws@me.com');
 ```
 
 
