@@ -70,7 +70,7 @@ Wait for the Kafka Connect pods to start:
 ```
 oc get pods 
 ```
-image::images/ss-running-pods.png
+image::images/ss-running-pods.png[]
 
 
 #### Step 3: Creation of a Kafka Connect connector with the AMQStreams Operator
