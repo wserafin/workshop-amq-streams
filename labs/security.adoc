@@ -237,7 +237,12 @@ Let's apply this new configuration:
 oc apply -f https://raw.githubusercontent.com/redhat-canada/workshop-amq-streams/master/configurations/applications/log-consumer-secured.yaml
 ----
 
-Inspect the log of `log-consumer` again.
+Inspect the log of `log-consumer` again. Since consumer pod has been replaced, make sure you get new pod id !!
+
+----
+oc get pods | grep log-consumer
+oc logs -f log-consumer-<id> -c log-consumer --tail=1
+----
 You should see the messages being exchanged.
 
 ==== OAuth security
