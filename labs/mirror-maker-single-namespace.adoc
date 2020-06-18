@@ -65,3 +65,13 @@ oc apply -f https://raw.githubusercontent.com/RedHatWorkshops/workshop-amq-strea
 ----
 
 Logging the related pods should yield the expected results and data flows between systems.
+
+----
+oc get pods | grep consumer
+logs -f log-consumer-<$id>  -c log-consumer --tail=1
+-----
+You should see messages:
+020-06-18 19:47:50.360  INFO 1 --- [r-source.lines]] o.a.k.c.consumer.internals.Fetcher       : [Consumer clientId=consumer-1, groupId=test-group] Resetting offset for partition my-cluster-source.lines-0 to offset 0.
+2020-06-18 19:49:09.967  INFO 1 --- [r-source.lines]] route1                                   : Message 3 at Thu Jun 18 19:27:40 UTC 2020
+2020-06-18 19:49:09.977  INFO 1 --- [r-source.lines]] route1                                   : Message 9 at Thu Jun 18 19:40:02 UTC 2020
+
