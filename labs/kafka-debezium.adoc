@@ -149,4 +149,4 @@ insert into customers values (null,'Wojciech', 'Serafin', 'ws@me.com');
 
 The content of the comic should be automatically sent by Kafka-Connect on the Kafka topic (dbserver1.inventory.customers)
 
-![resultat](images/lab5-connect-red.png)
+![result](images/lab5-connect-red.png)
