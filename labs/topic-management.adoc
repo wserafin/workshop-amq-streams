@@ -94,6 +94,12 @@ The topic has now 10 partitions and also note the increased retention time.
 oc rsh production-ready-kafka-0
 
 bin/kafka-topics.sh --zookeeper localhost:2181 --topic lines --describe
+
+----
+
+The expected result should look like:
+
+----
 OpenJDK 64-Bit Server VM warning: If the number of processors is expected to increase from one, then you should configure the number of parallel GC threads appropriately using -XX:ParallelGCThreads=N
 Topic:lines	PartitionCount:10	ReplicationFactor:2	Configs:segment.bytes=1073741824,retention.ms=14400000
 	Topic: lines	Partition: 0	Leader: 2	Replicas: 3,2	Isr: 2
