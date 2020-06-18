@@ -37,6 +37,7 @@ Now let's deploy the `KafkaTopic` into our current project:
 oc apply -f https://raw.githubusercontent.com/RedHatWorkshops/workshop-amq-streams/master/configurations/topics/lines.yaml
 ----
 
+!!!
 Let's wait a number of seconds and let's try to check that the topic has been created and log into one of the Kafka pods.
 You can use the command below or use the web console and the Terminal tab.
 
@@ -58,7 +59,11 @@ Topic:lines	PartitionCount:2	ReplicationFactor:2	Configs:segment.bytes=107374182
 	Topic: lines	Partition: 1	Leader: 0	Replicas: 0,3	Isr: 0,3
 ----
 
-Exit the container shell.
+Exit the container shell. Type:
+
+-------
+exit
+------
 
 Now let's increase the number of partitions.
 First, we need to amend the resource.
