@@ -19,4 +19,4 @@ This is the lab section of the AMQ Streams workshop.
 
 . link:./management-monitoring.adoc[Management and monitoring]
 
-. link:./kafka-debezium.adocRunning KafkaConnect and Debezium applications (extra lab)]
+. link:./kafka-debezium.adoc[Running KafkaConnect and Debezium applications (extra lab)]
