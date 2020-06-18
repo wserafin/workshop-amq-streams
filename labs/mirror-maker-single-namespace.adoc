@@ -34,6 +34,7 @@ Let's deploy another `production-ready-target` cluster as target of the mirrorin
 oc apply -f https://raw.githubusercontent.com/RedHatWorkshops/workshop-amq-streams/master/configurations/clusters/production-ready-target.yaml
 ----
 
+WARNING !
 Wait for the new cluster to be deployed.
 
 Now, because the `timer-producer` application will write on the already existing `lines` topic on `production-ready` cluster, let's create a corresponding `lines` topic on the `production-ready-target` cluster as destination of the mirroring, from where the `log-consumer` application will read messages.
