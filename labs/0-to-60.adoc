@@ -25,6 +25,7 @@ you will be running all the labs from that project
 === Inspect the AMQ Streams Operator
 
 in your project, you should see that the AMQStreams operator was made available to you by a cluster administrator:
+NOTE: Give a few seconds for operator to show up in your project.
 
 image::images/openshiftoperators.png[]
 
