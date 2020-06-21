@@ -1,15 +1,16 @@
 === Login on the OpenShift Console with your provided user name.
 For this workshop, the console is available here:
-https://console-openshift-console.apps.cluster-mtl-e9a6.mtl-e9a6.example.opentlc.com
+http://console-openshift-console.apps.cluster-telus-d491.telus-d491.example.opentlc.com
+User and password assigned 
 
-Download OpenShift client tool (oc) from here: https://console-openshift-console.apps.cluster-mtl-e9a6.mtl-e9a6.example.opentlc.com/command-line-tools
+Optional: Download OpenShift client tool (oc) from here: http://console-openshift-console.apps.cluster-telus-d491.telus-d491.example.opentlc.com
 
 using the dowloaded oc command, login to OpenShift using the command line tool.
 The cluster is configured using OAuth authentication, you need to obtain your token from the console:
 
 image::images/openshiftlogin.png[]
 
-oc login --token=gTZkG-OKZ9OWkoEAR25vbXgtZNcbWE-YLPadsaVKMz83M --server=https://api.cluster-mtl-e9a6.mtl-e9a6.example.opentlc.com:6443
+oc login --token=gTZkG-OKZ9OWkoEAR25vbXgtZNcbWE-YLPadsaVKMz83M --server=https://api.cluster-telus-d491.telus-d491.example.opentlc.com:6443
 
 Create your first OpenShift project:
 
@@ -17,7 +18,7 @@ image::images/openshiftproject.png[]
 
 or from the command line:
 
-oc new-project [project-name]
+oc new-project [project-name] - Use your assigned userID in your project name example--> amq-user1
 
 you will be running all the labs from that project
 
