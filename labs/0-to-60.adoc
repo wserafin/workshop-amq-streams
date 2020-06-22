@@ -116,7 +116,7 @@ OpenJDK 64-Bit Server VM warning: If the number of processors is expected to inc
 Now let's open another terminal into the cluster pod in a separate terminal (oc login --token...)
 
 ----
-$ oc rsh simple-cluster-kafka-0
+$ oc rsh --container kafka simple-cluster-kafka-0
 ----
 
 And let's start a consumer:
