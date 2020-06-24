@@ -42,7 +42,7 @@ Let's wait a number of seconds and let's try to check that the topic has been cr
 You can use the command below or use the web console and the Terminal tab.
 
 ----
-oc rsh production-ready-kafka-0
+oc rsh --container kafka production-ready-kafka-0
 ----
 
 Let's get the topic information.
@@ -91,7 +91,7 @@ And let's get the topic information again.
 The topic has now 10 partitions and also note the increased retention time.
 
 ----
-oc rsh production-ready-kafka-0
+oc rsh --container kafka production-ready-kafka-0
 
 bin/kafka-topics.sh --zookeeper localhost:2181 --topic lines --describe
 
