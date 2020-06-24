@@ -85,7 +85,7 @@ Now, let's quickly test that the deployed Kafka cluster works.
 Let's log into one of the cluster pods:
 
 ----
-$ oc rsh simple-cluster-kafka-0
+$ oc rsh --container kafka simple-cluster-kafka-0
 ----
 
 Next, let's start a producer:
