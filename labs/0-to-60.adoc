@@ -1,16 +1,16 @@
 === Login on the OpenShift Console with your provided user name.
 For this workshop, the console is available here:
-http://console-openshift-console.apps.cluster-telus-d491.telus-d491.example.opentlc.com
+http://console-openshift-console.apps.cluster-telus-b30a.telus-b30a.example.opentlc.com
 User and password assigned 
 
-Optional: Download OpenShift client tool (oc) from here: http://console-openshift-console.apps.cluster-telus-d491.telus-d491.example.opentlc.com
+Optional: Download OpenShift client tool (oc) from here: http://console-openshift-console.apps.cluster-telus-b30a.telus-b30a.example.opentlc.com
 
 using the dowloaded oc command, login to OpenShift using the command line tool.
 The cluster is configured using OAuth authentication, you need to obtain your token from the console:
 
 image::images/openshiftlogin.png[]
 
-oc login --token=gTZkG-OKZ9OWkoEAR25vbXgtZNcbWE-YLPadsaVKMz83M --server=https://api.cluster-telus-d491.telus-d491.example.opentlc.com:6443
+oc login --token=gTZkG-OKZ9OWkoEAR25vbXgtZNcbWE-YLPadsaVKMz83M --server=https://api.cluster-telus-b30a.telus-b30a.example.opentlc.com:6443
 
 Create your first OpenShift project:
 
