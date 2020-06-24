@@ -121,7 +121,7 @@ In the Openshift console, open a terminal inside the MySql Pod:
 
 image::images/lab5-connect-04.png[]
 
-* Project: votre projet
+* Project: your project name
 * Workloads: Pods
 * MySQL pod
 * Terminal Tab
