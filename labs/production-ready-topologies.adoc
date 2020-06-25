@@ -187,7 +187,7 @@ See runing Pods
 oc get pods
 ----
 
-You should see 
+You should see 5 kafka broker pods
 
 ----
 production-ready-entity-operator-8cdddb964-btxwt   3/3     Running   0          2m46s
