@@ -41,6 +41,23 @@ Use -->
 oc get pods
 ----
 To verify that all pods are up and runing 
+Output when ready:
+NAME                                               READY   STATUS    RESTARTS   AGE
+production-ready-entity-operator-8cdddb964-btxwt   3/3     Running   0          26m
+production-ready-kafka-0                           2/2     Running   0          98s
+production-ready-kafka-1                           2/2     Running   0          4m21s
+production-ready-kafka-2                           0/2     Running   0          34s
+production-ready-target-kafka-0                    1/2     Running   0          44s
+production-ready-target-kafka-1                    1/2     Running   0          44s
+production-ready-target-kafka-2                    1/2     Running   0          44s
+production-ready-target-zookeeper-0                1/1     Running   0          90s
+production-ready-target-zookeeper-1                1/1     Running   0          90s
+production-ready-target-zookeeper-2                1/1     Running   0          90s
+production-ready-zookeeper-0                       1/1     Running   0          28m
+production-ready-zookeeper-1                       1/1     Running   0          28m
+production-ready-zookeeper-2                       1/1     Running   0          28m
+
+
 
 Now, because the `timer-producer` application will write on the already existing `lines` topic on `production-ready` cluster, let's create a corresponding `lines` topic on the `production-ready-target` cluster as destination of the mirroring, from where the `log-consumer` application will read messages.
 
