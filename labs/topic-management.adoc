@@ -123,6 +123,8 @@ exit
 
 You should also see your topic in the OpenShift Console:
 
+--> Go to Adminstrator view, your project , installed operators, click on operator Url ( left on the scrren, ), from top level menu select Kafka Topic
+
 image::images/topic.png[]
 
 
