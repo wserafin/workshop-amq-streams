@@ -84,7 +84,7 @@ oc apply -f https://raw.githubusercontent.com/redhat-canada/workshop-amq-streams
 And finally the `timer-producer` application writing to the source cluster.
 
 ----
-oc apply -f https://raw.githubusercontent.com/RedHatWorkshops/workshop-amq-streams/master/configurations/applications/timer-producer.yaml
+oc apply -f https://raw.githubusercontent.com/redhat-canada/workshop-amq-streams/master/configurations/applications/timer-producer.yaml
 ----
 
 Logging the related pods should yield the expected results and data flows between systems.
