@@ -79,6 +79,10 @@ You should see three separate deployments:
 * `simple-cluster-kafka` - a stateful set containing the Kafka cluster
 * `simple-cluster-entity-operator` - a deployment containing the entity operator for managing topics and users
 
+=== View Pods in OCP console
+--> You can also see your PODS in Openshift console
+Switch to Developer View ( top lef corner ) , then select Topology 
+
 === Testing the deployment
 
 Now, let's quickly test that the deployed Kafka cluster works.
