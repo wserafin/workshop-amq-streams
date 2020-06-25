@@ -119,7 +119,7 @@ The cluster `production-ready` has the minimal settings for a highly available, 
 oc get pods 
 ----
 You should see 
-----
+
 NAME                                               READY   STATUS    RESTARTS   AGE
 production-ready-entity-operator-8cdddb964-btxwt   3/3     Running   0          40s
 production-ready-kafka-0                           2/2     Running   0          98s
@@ -128,7 +128,7 @@ production-ready-kafka-2                           2/2     Running   0          
 production-ready-zookeeper-0                       1/1     Running   0          2m35s
 production-ready-zookeeper-1                       1/1     Running   0          2m35s
 production-ready-zookeeper-2                       1/1     Running   0          2m35s
----
+
 
 * 3 Kafka broker nodes - this is the minimum recommended number for a production deployment
 * 3 ZooKeeper nodes - this is the minimum recommended number for a production deployments
