@@ -182,10 +182,13 @@ oc apply -f https://raw.githubusercontent.com/RedHatWorkshops/workshop-amq-strea
 ----
 
 See runing Pods
+
 ----
 oc get pods
 ----
+
 You should see 
+
 ----
 production-ready-entity-operator-8cdddb964-btxwt   3/3     Running   0          2m46s
 production-ready-kafka-0                           2/2     Running   0          3m44s
