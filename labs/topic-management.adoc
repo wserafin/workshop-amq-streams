@@ -39,6 +39,7 @@ oc apply -f https://raw.githubusercontent.com/RedHatWorkshops/workshop-amq-strea
 
 !!!
 Let's wait a number of seconds and let's try to check that the topic has been created and log into one of the Kafka pods.
+
 You can use the command below or use the web console and the Terminal tab.
 
 ----
