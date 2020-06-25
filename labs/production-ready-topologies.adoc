@@ -115,6 +115,21 @@ oc apply -f https://raw.githubusercontent.com/RedHatWorkshops/workshop-amq-strea
 
 The cluster `production-ready` has the minimal settings for a highly available, persistent cluster.
 
+----
+oc get pods 
+----
+You should see 
+----
+NAME                                               READY   STATUS    RESTARTS   AGE
+production-ready-entity-operator-8cdddb964-btxwt   3/3     Running   0          40s
+production-ready-kafka-0                           2/2     Running   0          98s
+production-ready-kafka-1                           2/2     Running   0          98s
+production-ready-kafka-2                           2/2     Running   0          98s
+production-ready-zookeeper-0                       1/1     Running   0          2m35s
+production-ready-zookeeper-1                       1/1     Running   0          2m35s
+production-ready-zookeeper-2                       1/1     Running   0          2m35s
+---
+
 * 3 Kafka broker nodes - this is the minimum recommended number for a production deployment
 * 3 ZooKeeper nodes - this is the minimum recommended number for a production deployments
 * `persistent-claim` storage that ensures that persistent volumes are allocated to Kafka and ZooKeeper instances
@@ -164,6 +179,23 @@ Let's apply this new configuration:
 
 ----
 oc apply -f https://raw.githubusercontent.com/RedHatWorkshops/workshop-amq-streams/master/configurations/clusters/production-ready-5-nodes.yaml
+----
+
+See runing Pods
+----
+oc get pods
+----
+You should see 
+----
+production-ready-entity-operator-8cdddb964-btxwt   3/3     Running   0          2m46s
+production-ready-kafka-0                           2/2     Running   0          3m44s
+production-ready-kafka-1                           2/2     Running   0          3m44s
+production-ready-kafka-2                           2/2     Running   0          3m44s
+production-ready-kafka-3                           2/2     Running   0          64s
+production-ready-kafka-4                           2/2     Running   0          64s
+production-ready-zookeeper-0                       1/1     Running   0          4m41s
+production-ready-zookeeper-1                       1/1     Running   0          4m41s
+production-ready-zookeeper-2                       1/1     Running   0          4m41s
 ----
 
 Notice the number of pods of the Kafka cluster increasing to 5 and the corresponding persistent claims.
