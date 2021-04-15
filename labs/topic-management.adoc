@@ -43,7 +43,7 @@ Let's wait a number of seconds and let's try to check that the topic has been cr
 You can use the command below or use the web console and the Terminal tab.
 
 ----
-oc rsh --container kafka production-ready-kafka-0
+oc rsh --container kafka production-ready-zookeeper-0
 ----
 
 Let's get the topic information.
